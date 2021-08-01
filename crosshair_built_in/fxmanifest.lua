@@ -11,3 +11,7 @@ ui_page "html/ui.html"
 files {
     "html/**/*.*",
 }
+
+dependencies {
+    "utility_lib"    
+}
