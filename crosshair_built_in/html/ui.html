@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" type="text/css"/>
+		<link rel="stylesheet" href="css/app.css" type="text/css"/>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="scripts/app.js"></script>
+	</head>
+	<body>
+		<!-- Configuration Menu -->
+		<div class="menu">
+			<div id="data"> 
+				<ol>
+					<li id="description_upload">Upload a custom crosshair</li>
+					<input id="file-input" type="text" name="name" onclick="ValueFromUser()" onchange="UpdateCrosshair()"/>
+				</ol>
+	
+				<div class="default_crosshair">Default crosshair</div>
+				<div class="checkbox">
+					<input type="checkbox" id="click" onchange="DefaultCrosshair()">
+				</div>
+	
+				<div class="dimension_text">Dimension</div>
+				<input type="range" id="dimension" min="0" max="5" value="0.4" step="0.01">
+				<input id="dimension_value" type="text" name="name" value="0.4" onclick="ValueFromUser()" onchange="UpdateValue()"/>
+			</div>
+		</div>
+
+		<!-- Crosshair -->
+		<div class="bg">
+			<img class="crosshair" id="crosshair" src="https://media.discordapp.net/attachments/690726930261213245/871251033152712766/crosshair.png">
+		</div>
+	</body>
+</html>
